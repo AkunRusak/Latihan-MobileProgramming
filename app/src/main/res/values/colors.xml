@@ -1,0 +1,7 @@
+<!-- colors.xml -->
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorText">#000000</color>
+    <color name="colorTextHint">#808080</color>
+</resources>

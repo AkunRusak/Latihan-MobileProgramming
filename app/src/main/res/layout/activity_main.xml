@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration Form"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Form Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/textViewHeader"
+        android:layout_above="@id/footerLayout"
+        android:background="@drawable/bg_rounded_corners"
+        android:padding="16dp">
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="text"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:textColorHint="@color/colorTextHint"
+            android:textColor="@color/colorText"/>
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:textColorHint="@color/colorTextHint"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:textColorHint="@color/colorTextHint"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_button"
+            android:padding="12dp"
+            android:layout_marginTop="24dp"/>
+    </LinearLayout>
+
+    <!-- Footer -->
+    <RelativeLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© 2024 Samsan Tech. All rights reserved."
+            android:textSize="12sp"
+            android:textColor="@color/colorTextHint"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
